@@ -3,12 +3,14 @@
     src: url('../monofonto.otf');
 }
 
-/* body{
-    font-family: Pipboy, sans-serif;
+body{
     color: #51e52e;
-    background: #1b3d15;
 }
 
+ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link{
+    color: #51e52e !important;
+}
+/*
 body::after{
     height:100%;
     width:100%;

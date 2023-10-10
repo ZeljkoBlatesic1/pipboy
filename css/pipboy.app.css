@@ -21,12 +21,12 @@ body::after{
     z-index:1000000;
     pointer-events: none;
 }
-
+*/
 .center-image img{
     margin: auto;
     display: block;
     position: relative;
     max-height: 300px;
     margin-top: 100px;
-    filter: grayscale(1) sepia(100%) hue-rotate(50deg) saturate(7) brightness(0.8) contrast(1.5);
-} */
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(0.8) contrast(1.5);
+} 

@@ -34,21 +34,28 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link{
     text-align: center;
     margin: auto;
     font-size: 32px;
-    line-height: 22px;
+    line-height: 32px;
+    z-index: 50;
     padding-bottom: 0px;
+    position: relative;
+
 }
 
 .navbar{
     border-bottom: 2px solid;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 .nav-item.active::before{
     content: "";
     position: absolute;
-    background: #f00;
-    height: 33px;
+    background: #272b23;
+    height: 32px;
+    top: 18px;
     width: 10%;
-    left:70px;
+    left: 6%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
 }
 
 .navbar::before, .navbar::after {
@@ -96,4 +103,69 @@ ul > li.nav-item > a.nav-link, ul > li.navbar-item.active > a.nav-link{
     width:calc(100% - 20px);
     margin: 10px;
     display: inline-block;
+    font-size: 15px !important;
+}
+
+.nav.nav-tabs{
+    margin: 20px;
+    border-bottom: none;
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover{
+    border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active{
+    background: #272b23 !important;
+    background-color: #272b23 !important;
+    border-color: #272b23 #272b23 #272b23 !important;
+}
+
+ul > li.nav-item > a.nav-link{
+    font-size: 22px !important;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a{
+    opacity: .6 !important;
+}
+.nav.nav-tabs > li:nth-child(3) > a{
+    opacity: .3 !important;
+}
+
+.level-progress{
+    width: 70%;
+    height: 10px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator{
+    height: 8px;
+    background: #14fe17;
+    position: relative;
+    width: 70%;
+}
+
+.navbar.navbar-light.pip-footer{
+    border: none;
+}
+
+.navbar.navbar-light.pip-footer::before{
+    height: 0 !important;
+}
+
+.navbar.navbar-light.pip-footer::after{
+    height: 0 !important;
+}
+
+.navbar.pip-footer .col-6{
+    background: rgba(16, 255, 0, 0.15);
+    margin:0px 2px;
+    flex: 0 0 48%;
+}
+
+#pip-footer-col3{
+    background: rgba(16, 255, 0, 0.15);
+    flex: 0 0 48%;
+    margin:0px 2px;
 }

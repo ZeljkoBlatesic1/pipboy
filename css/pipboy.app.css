@@ -187,3 +187,19 @@ ul > li.nav-item > a.nav-link{
 .stat-bars > .row{
     margin-bottom: 100px;
 }
+
+.w10{
+    width: 10%;
+}
+
+.w30{
+    width: 30%;
+}
+
+.w70{
+    width: 70%;
+}
+
+.w90{
+    width: 90%;
+}

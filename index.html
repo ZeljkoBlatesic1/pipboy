@@ -13,11 +13,11 @@
         <nav class="navbar navbar-toggleable navbar-expand navbar-light text-center">
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav nav-fill">
-                    <li class="nav-item active">
-                        <a href="#" class="nav-link">STAT</a>
+                    <li class="navbar-item active">
+                        <a href="index.html" class="nav-link">STAT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">INV</a>
+                        <a href="inv.html" class="nav-link">INV</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">DATA</a>
@@ -55,6 +55,101 @@
                 <div class="center-image">
                     <img src="pipBoy2.png" alt="pipboy">
                 </div>
+
+                <div class="stat-bars">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator" width="50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator w10"></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-6">
+                        
+                        </div>
+            
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator w90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator w70"></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-6">
+                        
+                        </div>
+            
+                        <div class="col-3">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="stat-bar">
+                                <div class="level-progress">
+                                    <div class="level-progress-indicator w30"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="row stat-numbers">
+                        <div class="col-2 transparent"></div>
+                        <div class="col-2">
+                            <img src="gun.png" class="gun-icon img-responsive" alt="">
+                        </div>
+                        <div class="col-1">
+                            <img src="crosshair6.png" class="img-responsive sm-image" alt="">
+                            <div class="points">18</div>
+                        </div>
+                        
+                        <div class="col-1 transparent"></div>
+                        
+                        <div class="col-2">
+                            <img src="helmet6.png" alt="helmet icon" class="helmet-icon img-responsive">
+                        </div>
+                        
+                        <div class="col-1">
+                            <img src="elect2.png" alt="energy icon" class="img-responsive sm-image" />
+                            <div class="points">18</div>
+                        </div>
+                        <div class="col-1">
+                            <img src="goj.png" alt="radiation icon" class="img-responsive sm-image">
+                            <div class="points">18</div>
+                        </div>
+                        
+                        <div class="col-2 transparent"></div>
+                    </div>
+
             </div>
             <div class="tab-pane" id="special" role="tabpanel">
                 SPECIAL
@@ -66,13 +161,18 @@
 
         <navbar class="navbar navbar-light pip-footer">
             <div class="row">
-                <div class="col-3">
+                <div class="col-3 text-left" style="background: rgba(16, 255, 0, 0.15);">
                     HP 90/90
                 </div>
-                <div class="col-6">LEVEL 1
-                    <div class="level-progress"></div>
+                <div class="col-6">
+                    <span>LEVEL 1</span>
+                    <div class="level-progress">
+                        <div class="level-progress-indicator" width="50%"></div>
+                    </div>
                 </div>
-                <div class="col-3">AP 50/50</div>
+                <div class="col-3 text-right" id="pip-footer-col3">
+                    AP 50/50
+                </div>
             </div>
         </navbar>
 
